@@ -1,8 +1,28 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Observer", "Observer\Observer.csproj", "{0AE1A91F-FA83-45C3-B3E1-A5DAA70F41FA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactoryMethod", "FactoryMethod\FactoryMethod.csproj", "{A9E15A1B-258E-4A30-93CA-3BE765690B13}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Proxy", "Proxy\Proxy.csproj", "{35B01713-FDA0-4DE6-943E-DF22686D8EA3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0AE1A91F-FA83-45C3-B3E1-A5DAA70F41FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0AE1A91F-FA83-45C3-B3E1-A5DAA70F41FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0AE1A91F-FA83-45C3-B3E1-A5DAA70F41FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0AE1A91F-FA83-45C3-B3E1-A5DAA70F41FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9E15A1B-258E-4A30-93CA-3BE765690B13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9E15A1B-258E-4A30-93CA-3BE765690B13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9E15A1B-258E-4A30-93CA-3BE765690B13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9E15A1B-258E-4A30-93CA-3BE765690B13}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35B01713-FDA0-4DE6-943E-DF22686D8EA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35B01713-FDA0-4DE6-943E-DF22686D8EA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35B01713-FDA0-4DE6-943E-DF22686D8EA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35B01713-FDA0-4DE6-943E-DF22686D8EA3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
