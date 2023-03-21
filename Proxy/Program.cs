@@ -24,6 +24,7 @@ catch (ArgumentException ex)
     Console.WriteLine(ex.Message);
 }
 
+
 Console.Write($"Calculate 5 / 0 = ");
 try
 {

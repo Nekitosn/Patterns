@@ -11,21 +11,21 @@ public class CalculatorProxy : ICalculator
         _calculator = new Calculator();
     }
 
-    public double Calculate(double num1, double num2, char op)
+    public double Calculate(double num1, double num2, char @operator)
     {
-        ThrowIfInvalidArgument(num1, num2, op);
+        ThrowIfInvalidArgument(num1, num2, @operator);
 
-        return _calculator.Calculate(num1, num2, op);
+        return _calculator.Calculate(num1, num2, @operator);
     }
     
-    private void ThrowIfInvalidArgument(double num1, double num2, char op)
+    private void ThrowIfInvalidArgument(double num1, double num2, char @operator)
     {
-        if (op != '+' && op != '-' && op != '*' && op != '/')
+        if (@operator != '+' && @operator != '-' && @operator != '*' && @operator != '/')
         {
             throw new ArgumentException("No such operator exists!");
         }
 
-        if (op == '/' && num2 == 0)
+        if (@operator == '/' && num2 == 0)
         {
             throw new ArgumentException("Zero division error!");
 
