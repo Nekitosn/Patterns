@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactoryMethod", "FactoryMet
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Proxy", "Proxy\Proxy.csproj", "{35B01713-FDA0-4DE6-943E-DF22686D8EA3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Builder", "Builder\Builder.csproj", "{77AD905B-716B-4A24-BD3C-DEF8D9F63AF3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{35B01713-FDA0-4DE6-943E-DF22686D8EA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{35B01713-FDA0-4DE6-943E-DF22686D8EA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{35B01713-FDA0-4DE6-943E-DF22686D8EA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77AD905B-716B-4A24-BD3C-DEF8D9F63AF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77AD905B-716B-4A24-BD3C-DEF8D9F63AF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77AD905B-716B-4A24-BD3C-DEF8D9F63AF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77AD905B-716B-4A24-BD3C-DEF8D9F63AF3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
