@@ -9,38 +9,38 @@ public class User : IUser
 {
     public User()
     {
-        SubscribedGenres = new List<GenreFilm>();
+        SubscribedGenres = new List<FilmGenre>();
     }
 
-    public List<GenreFilm> SubscribedGenres { get; }
+    public List<FilmGenre> SubscribedGenres { get; }
 
-    public void AddGenre(GenreFilm genreFilm)
+    public void AddGenre(FilmGenre filmGenre)
     {
-        if (SubscribedGenres.Any(subscribedGenre => subscribedGenre == genreFilm))
+        if (SubscribedGenres.Any(subscribedGenre => subscribedGenre == filmGenre))
         {
             return;
         }
 
-        Console.WriteLine($"You have subscribed to notifications about {genreFilm}.");
-        SubscribedGenres.Add(genreFilm);
+        Console.WriteLine($"You have subscribed to notifications about {filmGenre}.");
+        SubscribedGenres.Add(filmGenre);
     }
 
-    public void RemoveGenre(GenreFilm genreFilm)
+    public void RemoveGenre(FilmGenre filmGenre)
     {
-        if (SubscribedGenres.Any(subscribedGenre => subscribedGenre == genreFilm))
+        if (SubscribedGenres.Contains(filmGenre))
         {
-            Console.WriteLine($"You have unsubscribed to notifications about {genreFilm}.");
-            SubscribedGenres.Remove(genreFilm);
+            Console.WriteLine($"You have unsubscribed to notifications about {filmGenre}.");
+            SubscribedGenres.Remove(filmGenre);
         }
     }
     
     public void Update(IPublisher publisher)
     {
-        var genreFilm = ((publisher as Cinema)!).UpcomingFilmGenre;
+        var filmGenre = ((publisher as Cinema)!).UpcomingFilmGenre;
         
-        if(SubscribedGenres.Contains(genreFilm))
+        if(SubscribedGenres.Contains(filmGenre))
         {
-            Console.WriteLine($"A movie with the {genreFilm} genre is coming out soon."); 
+            Console.WriteLine($"A movie with the {filmGenre} genre is coming out soon."); 
         }
     }
 }

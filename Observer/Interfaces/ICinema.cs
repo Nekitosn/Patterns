@@ -5,5 +5,5 @@ namespace Observer.Interfaces;
 
 public interface ICinema : IPublisher
 {
-    public void SetGenreNextFilm(GenreFilm genreFilm);
+    public void SetGenre(FilmGenre filmGenre);
 }

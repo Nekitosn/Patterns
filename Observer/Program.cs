@@ -6,34 +6,34 @@ Console.WriteLine("\tStart program\n");
 
 ICinema cinema = new Cinema();
 
-IUser user1 = new User();
-IUser user2 = new User();
-IAdmin admin1 = new Admin();
+IUser userFirst = new User();
+IUser userSecond = new User();
+IAdmin admin = new Admin();
 
-cinema.Attach(admin1);
-cinema.Attach(user1);
-cinema.Attach(user2);
+cinema.Attach(admin);
+cinema.Attach(userFirst);
+cinema.Attach(userSecond);
 
 Console.WriteLine("\n\tThe notifies before users add the movie genres they are interested:");
-cinema.SetGenreNextFilm(GenreFilm.Adventure);
+cinema.SetGenre(FilmGenre.Adventure);
 
 
 Console.WriteLine("\n\tThe notifies after users add the movie genres they are interested:");
-user1.AddGenre(GenreFilm.Adventure);
-user1.AddGenre(GenreFilm.ScienceFiction);
-user2.AddGenre(GenreFilm.Adventure);
+userFirst.AddGenre(FilmGenre.Adventure);
+userFirst.AddGenre(FilmGenre.ScienceFiction);
+userSecond.AddGenre(FilmGenre.Adventure);
 
 Console.WriteLine("\n\tAdd first genre:");
-cinema.SetGenreNextFilm(GenreFilm.Adventure);
+cinema.SetGenre(FilmGenre.Adventure);
 
 Console.WriteLine("\n\tAdd second genre:");
-cinema.SetGenreNextFilm(GenreFilm.ScienceFiction);
+cinema.SetGenre(FilmGenre.ScienceFiction);
 
 
 Console.WriteLine("\n\tUnsubscribe user from the genre:");
-user2.RemoveGenre(GenreFilm.Adventure);
+userSecond.RemoveGenre(FilmGenre.Adventure);
 
-cinema.SetGenreNextFilm(GenreFilm.Adventure);
+cinema.SetGenre(FilmGenre.Adventure);
 
 
 Console.WriteLine("\n\tEnd program");

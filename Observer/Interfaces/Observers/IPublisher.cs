@@ -2,9 +2,9 @@
 
 public interface IPublisher
 {
-    public void Attach(ISubscribed subscribed);
+    public void Attach(ISubscriber subscriber);
     
-    public void Detach(ISubscribed subscribed);
+    public void Detach(ISubscriber subscriber);
     
     public void Notify();
 }

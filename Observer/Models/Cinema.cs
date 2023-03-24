@@ -6,39 +6,39 @@ namespace Observer.Models;
 
 public class Cinema : ICinema
 {
-    private List<ISubscribed> _subscribers;
+    private List<ISubscriber> _subscribers;
 
     public Cinema()
     {
-        _subscribers = new List<ISubscribed>();
+        _subscribers = new List<ISubscriber>();
     }
 
-    public GenreFilm UpcomingFilmGenre { get; private set; }
+    public FilmGenre UpcomingFilmGenre { get; private set; }
 
-    public void SetGenreNextFilm(GenreFilm genreFilm)
+    public void SetGenre(FilmGenre filmGenre)
     {
-        UpcomingFilmGenre = genreFilm;
+        UpcomingFilmGenre = filmGenre;
         
         Notify();
     }
 
-    public void Attach(ISubscribed subscribed)
+    public void Attach(ISubscriber subscriber)
     {
-        Console.WriteLine("Cinema: Attached an subscribed.");
-        _subscribers.Add(subscribed);
+        Console.WriteLine("Cinema: Attached the subscriber.");
+        _subscribers.Add(subscriber);
     }
 
-    public void Detach(ISubscribed subscribed)
+    public void Detach(ISubscriber subscriber)
     {
-        Console.WriteLine("Cinema: Detach an subscribed.");
-        _subscribers.Remove(subscribed);
+        Console.WriteLine("Cinema: Detach the subscriber.");
+        _subscribers.Remove(subscriber);
     }
 
     public void Notify()
     {
-        foreach (var observer in _subscribers)
+        foreach (var subscriber in _subscribers)
         {
-            observer.Update(this);
+            subscriber.Update(this);
         }
     }
 }

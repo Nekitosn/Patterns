@@ -2,6 +2,6 @@
 
 namespace Observer.Interfaces;
 
-public interface IAdmin : ISubscribed
+public interface IAdmin : ISubscriber
 {
 }

@@ -1,6 +1,6 @@
 ﻿namespace Observer.Enums;
 
-public enum GenreFilm
+public enum FilmGenre
 {
     Adventure = 1,
     ScienceFiction = 2,

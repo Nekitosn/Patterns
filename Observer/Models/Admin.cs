@@ -8,21 +8,21 @@ public class Admin : IAdmin
 {
     public Admin()
     {
-        SubscribedGenres = new List<GenreFilm>();
+        SubscribedGenres = new List<FilmGenre>();
         
-        var genreFilms = Enum.GetValues(typeof(GenreFilm)).Cast<GenreFilm>().ToList();
-        SubscribedGenres.AddRange(genreFilms);
+        var filmGenres = Enum.GetValues(typeof(FilmGenre)).Cast<FilmGenre>().ToList();
+        SubscribedGenres.AddRange(filmGenres);
     }
 
-    public List<GenreFilm> SubscribedGenres { get; }
+    public List<FilmGenre> SubscribedGenres { get; }
     
     public void Update(IPublisher publisher)
     {
-        var genreFilm = ((publisher as Cinema)!).UpcomingFilmGenre;
+        var filmGenre = ((publisher as Cinema)!).UpcomingFilmGenre;
         
-        if(SubscribedGenres.Contains(genreFilm))
+        if(SubscribedGenres.Contains(filmGenre))
         {
-            Console.WriteLine($"A movie with the {genreFilm} genre is coming out soon. Check the poster for errors."); 
+            Console.WriteLine($"A movie with the {filmGenre} genre is coming out soon. Check the poster for errors."); 
         }
     }
 }

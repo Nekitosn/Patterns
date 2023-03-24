@@ -3,9 +3,9 @@ using Observer.Interfaces.Observers;
 
 namespace Observer.Interfaces;
 
-public interface IUser : ISubscribed
+public interface IUser : ISubscriber
 {
-    public void AddGenre(GenreFilm genreFilm);
+    public void AddGenre(FilmGenre filmGenre);
 
-    public void RemoveGenre(GenreFilm genreFilm);
+    public void RemoveGenre(FilmGenre filmGenre);
 }
