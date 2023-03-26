@@ -16,21 +16,21 @@ public class User : IUser
 
     public void AddGenre(FilmGenre filmGenre)
     {
-        if (SubscribedGenres.Any(subscribedGenre => subscribedGenre == filmGenre))
+        if (SubscribedGenres.Contains(filmGenre))
         {
             return;
         }
 
-        Console.WriteLine($"You have subscribed to notifications about {filmGenre}.");
         SubscribedGenres.Add(filmGenre);
+        Console.WriteLine($"You have subscribed to notifications about {filmGenre}.");
     }
 
     public void RemoveGenre(FilmGenre filmGenre)
     {
         if (SubscribedGenres.Contains(filmGenre))
         {
-            Console.WriteLine($"You have unsubscribed to notifications about {filmGenre}.");
             SubscribedGenres.Remove(filmGenre);
+            Console.WriteLine($"You have unsubscribed to notifications about {filmGenre}.");
         }
     }
     

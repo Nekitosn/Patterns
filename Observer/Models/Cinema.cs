@@ -24,14 +24,14 @@ public class Cinema : ICinema
 
     public void Attach(ISubscriber subscriber)
     {
-        Console.WriteLine("Cinema: Attached the subscriber.");
         _subscribers.Add(subscriber);
+        Console.WriteLine("Cinema: Attached the subscriber.");
     }
 
     public void Detach(ISubscriber subscriber)
     {
-        Console.WriteLine("Cinema: Detach the subscriber.");
         _subscribers.Remove(subscriber);
+        Console.WriteLine("Cinema: Detach the subscriber.");
     }
 
     public void Notify()
