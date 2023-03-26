@@ -1,6 +1,6 @@
 ﻿using FactoryMethod.Interfaces;
 
-namespace FactoryMethod.Factories;
+namespace FactoryMethod.Models.Transports;
 
 public class UnknownTransport : ITransport
 {
