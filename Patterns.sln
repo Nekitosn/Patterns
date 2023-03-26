@@ -8,6 +8,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Proxy", "Proxy\Proxy.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Strategy", "Strategy\Strategy.csproj", "{6239FA32-D591-4508-92A6-6262D270A37B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Adapter", "Adapter\Adapter.csproj", "{FDB51141-68F3-47E7-83EA-A577D81EC2B8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +32,9 @@ Global
 		{6239FA32-D591-4508-92A6-6262D270A37B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6239FA32-D591-4508-92A6-6262D270A37B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6239FA32-D591-4508-92A6-6262D270A37B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDB51141-68F3-47E7-83EA-A577D81EC2B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDB51141-68F3-47E7-83EA-A577D81EC2B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDB51141-68F3-47E7-83EA-A577D81EC2B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDB51141-68F3-47E7-83EA-A577D81EC2B8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
