@@ -8,14 +8,12 @@ IComputerBuilder topComputerBuilder = new TopComputerBuilder();
 Director topDirector = new Director(topComputerBuilder);
 topDirector.ConstructComputer();
 Computer topComputer = topComputerBuilder.GetComputer();
-Console.WriteLine("   Top computer:");
-topComputer.Display();
+Console.WriteLine($"   Top computer:{topComputer}");
 
 IComputerBuilder mediumComputerBuilder = new MediumComputerBuilder();
 Director mediumDirector = new Director(mediumComputerBuilder);
 mediumDirector.ConstructComputer();
 Computer mediumComputer = mediumComputerBuilder.GetComputer();
-Console.WriteLine("\n   Medium computer:");
-mediumComputer.Display();
+Console.WriteLine($"\n   Medium computer:{mediumComputer}");
 
 Console.WriteLine("\n   End project");
